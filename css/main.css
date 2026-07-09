@@ -173,6 +173,15 @@ header .container nav .form i {
 .landing .text .content {
 max-width: 500px;
 }
+@media (max-width: 767px) {
+  .landing .text {
+    width: 100%;
+  }
+  .landing .text .content {
+    max-width: 100%;
+  }
+}
+
 .landing .content h2 {
   font-size: 32px;
   font-weight: normal;
@@ -183,5 +192,40 @@ max-width: 500px;
 .landing .content p {
 line-height: 2;
 font-size: 14px;
+}
+.landing .change-background{
+  color: #ddd;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+@media (max-width:767px) {
+  .landing .change-background {
+    display: none;
+  }
+}
+.landing .right {
+right: 30px;
+}
+.landing .left {
+  left: 30px;
+}
+.landing .bullets {
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 30px;
+  left: 50%;
+  display: flex;
+}
+.landing .bullets li {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin-right: 7px;
+}
+.landing .bullets li.active {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
 }
 /* End landing */
