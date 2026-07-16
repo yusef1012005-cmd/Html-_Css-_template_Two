@@ -1,0 +1,46 @@
+/* focuse on mainheading + h2 + paraghraphs */
+/* .section {
+    padding: 100px;
+} any section have to take padding :100px;!important*/
+.main-heading {
+    text-align: center;
+}
+.main-heading h2 {
+    font-weight: normal;
+    font-size: 40px;
+    margin-bottom: 70px;
+    position: relative;
+
+    text-transform: uppercase;
+}
+.main-heading h2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    bottom:-30px ;
+    height: 2px;
+    background-color: #333;
+}
+.main-heading h2:after {
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -38px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+}
+.main-heading p {
+    line-height: 2;
+    width: 550px;
+    color: #777;
+    margin: 0 auto 100px;
+    max-width: 100%;
+}
+
+/* End Mianheading */
